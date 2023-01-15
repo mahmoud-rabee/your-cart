@@ -1,0 +1,30 @@
+.top-parent {
+    padding: 60px 0;
+}
+.heading {
+    font-size: 45px;
+    margin: 0 0 50px;
+}
+.c-card {
+    background-color:#ca6510;
+    color: white;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.c-card h5 {
+    font-size: 30px;
+}
+.c-card p {
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 35px;
+    }
+}

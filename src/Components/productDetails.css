@@ -1,0 +1,25 @@
+.g-parent {
+    background-color: #984c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 112px 0; */
+}
+.card.mt-3 {
+    max-width: 100%;
+    height: fit-content;
+}
+@media (max-width:768px) {
+    .card.mt-3 {
+        max-width: 400px;
+    }
+}
+.card.mt-3 button {
+    border-color: #fd7e14 !important;
+    color: black !important;
+}
+.card.mt-3 button:hover {
+    background-color: #fd7e14 !important;
+    border-color: #efaa4b !important;
+    color: white !important;
+}

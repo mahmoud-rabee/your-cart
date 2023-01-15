@@ -1,0 +1,6 @@
+.active {
+    border-bottom: 2px solid #fd7e14;
+}
+.navbar-toggler {
+    color: #efaa4b !important; 
+}

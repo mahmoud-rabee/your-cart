@@ -1,0 +1,32 @@
+.father {
+    background-color: #d4ced0;
+
+}
+.arrivals {
+    background-image: url('../Components/assets/arrival-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #d4ced0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.child {
+    width: 50%;
+}
+.child h2 {
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    .arrivals {
+       background-image: none;
+       height: 400px;
+    }
+    .child {
+        width: 100%;
+    }
+    .child h2 {
+        font-size: 45px;
+    }
+}

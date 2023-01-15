@@ -1,0 +1,31 @@
+.cparent {
+    padding: 30px 0;
+    background-color: #653208;
+}
+.item h1 {
+    font-size: 70px;
+    width: 45%;
+    color: white;
+}
+.item h1 span {
+    color: #fd7e14;
+}
+.item p {
+    width: 45%;
+    color: white;
+}
+@media (max-width: 768px) {
+    .item h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+    .item p {
+        width: 100%;
+    }
+}
+.owl-dot span {
+    background-color: #feb272 !important;
+}
+.owl-dot.active span {
+    background-color: #fd7e14 !important;
+}

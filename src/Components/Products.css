@@ -1,0 +1,20 @@
+.parent h2 {
+    font-size: 45px;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+.parent h2 {
+    font-size: 31px;
+}
+}
+.categories {
+    flex-wrap: wrap;
+}
+.categories button {
+    border-color: #fd7e14;
+    color: black;
+}
+.categories button:hover {
+    background-color: #fd7e14;
+    border-color: #efaa4b;
+}
