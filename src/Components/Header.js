@@ -8,7 +8,7 @@ function Header() {
       style={{ backgroundColor: "#331904" }}
     >
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/your-cart">
           <h2 style={{ color: "white" }}>Your Cart</h2>
         </Link>
         <button
@@ -29,7 +29,7 @@ function Header() {
                 className="nav-link"
                 style={{ color: "white" }}
                 aria-current="page"
-                to="/"
+                to="/your-cart"
               >
                 Home
               </NavLink>
