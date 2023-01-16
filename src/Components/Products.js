@@ -6,6 +6,7 @@ import "./Products.css";
 function Products() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getCategories = () => {
     axios
@@ -17,18 +18,25 @@ function Products() {
   };
 
   const getAllProducts = () => {
+    setLoading(true);
     axios
       .get("https://fakestoreapi.com/products")
       .then((res) => {
+        setLoading(false);
+
         setProducts(res.data);
       })
       .catch((error) => {});
   };
 
   const getInCategory = (cat) => {
+    setLoading(true);
+
     axios
       .get(`https://fakestoreapi.com/products/category/${cat}`)
       .then((res) => {
+        setLoading(false);
+
         setProducts(res.data);
       })
       .catch((error) => {});
@@ -63,6 +71,11 @@ function Products() {
             </button>
           ))}
         </div>
+        {loading && (
+          <h3 className="text-center" style={{ color: "#ca6510" }}>
+            Loading....
+          </h3>
+        )}
         <div className="row m-2">
           {products.map((product) => (
             <div key={product.id} className="col-md-4">

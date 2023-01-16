@@ -37,4 +37,3 @@ function Product({ product }) {
 }
 
 export default Product;
-// height: "300px",

@@ -14,12 +14,17 @@
         max-width: 400px;
     }
 }
-.card.mt-3 button {
+.card.mt-3 button,
+.g-parent a {
     border-color: #fd7e14 !important;
     color: black !important;
 }
-.card.mt-3 button:hover {
+.card.mt-3 button:hover,
+.g-parent a:hover {
     background-color: #fd7e14 !important;
     border-color: #efaa4b !important;
     color: white !important;
+}
+.g-parent a {
+
 }

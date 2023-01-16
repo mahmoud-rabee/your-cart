@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "./productDetails.css";
 
@@ -37,9 +37,12 @@ function ProductDetails() {
               <p className="card-text">
                 <small className="text-muted">Price: {product.price} $</small>
               </p>
-              <button className="btn btn-outline-primary w-50">
+              <button className="btn btn-outline-primary">
                 Add to Cart
               </button>
+              <Link className="btn btn-outline-primary m-3" to={"/cart"}>
+                Go to the Cart
+              </Link>
             </div>
           </div>
         </div>

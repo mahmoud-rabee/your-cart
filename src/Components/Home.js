@@ -1,6 +1,5 @@
 import Carousel from "./Carousel";
 import Advantages from "./Advantages";
-import Arrivals from "./Arrivals";
 import Products from "./Products";
 
 function Home() {
@@ -8,7 +7,6 @@ function Home() {
     <>
       <Carousel />
       <Advantages />
-      <Arrivals />
       <Products />
     </>
   );

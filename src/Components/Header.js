@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
+// import cartIcon from "./assets/shopping-cart.png";
 
 function Header() {
   return (
@@ -55,6 +56,9 @@ function Header() {
               Search
             </button>
           </form>
+          <Link className="cart btn btn-outline-light" to="/cart">
+            <i className="fa fa-shopping-cart fs-5"></i> ( 0 )
+          </Link>
         </div>
       </div>
     </nav>
