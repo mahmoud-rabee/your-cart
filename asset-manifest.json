@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/your-cart/static/css/main.3d0bf551.css",
-    "main.js": "/your-cart/static/js/main.6a54c9a3.js",
-    "static/media/arrival-bg.png": "/your-cart/static/media/arrival-bg.dfd05e88df3057f38a2b.png",
+    "main.css": "/your-cart/static/css/main.a7328c27.css",
+    "main.js": "/your-cart/static/js/main.99f5fc81.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/your-cart/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/your-cart/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/your-cart/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/your-cart/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/your-cart/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/your-cart/index.html",
-    "main.3d0bf551.css.map": "/your-cart/static/css/main.3d0bf551.css.map",
-    "main.6a54c9a3.js.map": "/your-cart/static/js/main.6a54c9a3.js.map"
+    "main.a7328c27.css.map": "/your-cart/static/css/main.a7328c27.css.map",
+    "main.99f5fc81.js.map": "/your-cart/static/js/main.99f5fc81.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d0bf551.css",
-    "static/js/main.6a54c9a3.js"
+    "static/css/main.a7328c27.css",
+    "static/js/main.99f5fc81.js"
   ]
 }
