@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "./productDetails.css";
+import { useDispatch } from "react-redux";
+import { addToCart } from "./Redux/Slices/cartSlice";
 
 function ProductDetails() {
   const params = useParams();
   const [product, setProduct] = useState({});
+  const dispatch = useDispatch();
 
   useEffect(() => {
     axios
@@ -37,7 +40,10 @@ function ProductDetails() {
               <p className="card-text">
                 <small className="text-muted">Price: {product.price} $</small>
               </p>
-              <button className="btn btn-outline-primary">
+              <button
+                onClick={() => dispatch(addToCart(product))}
+                className="btn btn-outline-primary"
+              >
                 Add to Cart
               </button>
               <Link className="btn btn-outline-primary m-3" to={"/cart"}>

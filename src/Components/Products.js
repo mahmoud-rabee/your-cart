@@ -72,9 +72,15 @@ function Products() {
           ))}
         </div>
         {loading && (
-          <h3 className="text-center" style={{ color: "#ca6510" }}>
-            Loading....
-          </h3>
+          <div className="d-flex justify-content-center m-3">
+            <div
+              className="spinner-border"
+              role="status"
+              style={{ color: "#ca6510", width: "2rem", height: "2rem" }}
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
         )}
         <div className="row m-2">
           {products.map((product) => (

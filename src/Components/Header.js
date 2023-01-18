@@ -1,8 +1,9 @@
+import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
-// import cartIcon from "./assets/shopping-cart.png";
 
 function Header() {
+  const cart = useSelector(state => state.cart)
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
@@ -45,7 +46,7 @@ function Header() {
               </NavLink>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
@@ -57,7 +58,7 @@ function Header() {
             </button>
           </form>
           <Link className="cart btn btn-outline-light" to="/cart">
-            <i className="fa fa-shopping-cart fs-5"></i> ( 0 )
+            <i className="fa fa-shopping-cart fs-5"></i> ( {cart.length} )
           </Link>
         </div>
       </div>
